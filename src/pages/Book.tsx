@@ -3,14 +3,14 @@
 import Spinner from '@/components/ui/layout/Spinner';
 import { useGetBookQuery } from '@/redux/api/baseApi';
 import type { IBooks } from '@/types';
-
 import AllBooks from '@/module/AllBooks';
 
 export default function Book() {
   const { data,  isLoading } = useGetBookQuery(undefined);
-  console.log("Data : ", data);
-  console.log("data.books : ", data.books);
-  console.log("isLoading : ", isLoading);
+    console.log({ data, isLoading })
+
+    console.log("data : ", data)
+    console.log("data?.data : ", data?.data)
 
   if (isLoading) return <Spinner />;
 

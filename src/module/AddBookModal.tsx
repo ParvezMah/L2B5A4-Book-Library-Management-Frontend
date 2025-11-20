@@ -24,17 +24,20 @@ export default function AddBookModal() {
 
   // ✅ React Hook Form with validation mode
   const form = useForm<BookData>({
-    mode: "onChange",
+    mode: "onChange", // Validation strategy before submitting behaviour
   });
 
-  const { isValid } = form.formState;
+  const { isValid } = form.formState; // Set to true if the form doesn't have any errors
 
+  // Step-2: API Hook
   const [createBook, { isLoading }] = useCreateBookMutation();
 
+  // Step-3. Loading Spinner
   if (isLoading) {
     return <Spinner />;
   }
 
+  // Step-4. Form Submission
   const onSubmit: SubmitHandler<BookData> = async (formData) => {
   if (formData.copies === 0) {
         formData.available = false;
@@ -168,7 +171,7 @@ export default function AddBookModal() {
               )}
             />
 
-            {/* Copies */}
+            {/* Step-5. Form Fields */}
             <FormField
               control={form.control}
               name="copies"
@@ -200,6 +203,7 @@ export default function AddBookModal() {
               render={({ field }) => (
                 <FormItem className="flex items-center space-x-3">
                   <FormControl>
+                    {/* Step-6. Dynamic Available Checkbox */}
                     <Checkbox
                       className="ml-1"
                       checked={copies > 0 ? true : field.value}
@@ -213,7 +217,7 @@ export default function AddBookModal() {
               )}
             />
 
-            {/* Submit Button */}
+            {/* Step-7. Submit Button */}
             <Button
               type="submit"
               disabled={!isValid || isLoading}

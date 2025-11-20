@@ -1,9 +1,8 @@
-
 import { useState } from "react";
-import { Link } from "react-router"; 
-import logo from "./logo.jpg";
-import { Menu, X } from "lucide-react"; 
+import { Link } from "react-router";
 
+import { Menu, X } from "lucide-react";
+import logo from "./logo.jpg";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,8 +11,14 @@ export default function Navbar() {
       <div className="flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Logo" className="h-10 w-10 object-cover rounded-full" />
-          <span className="text-xl font-semibold text-gray-800">BookTopper</span>
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-10 w-10 object-cover rounded-full"
+          />
+          <span className="text-xl font-semibold text-gray-800">
+            Librarian
+          </span>
         </div>
 
         {/* Desktop Menu */}
@@ -23,7 +28,7 @@ export default function Navbar() {
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(true)}>
+          <button type="button" onClick={() => setIsOpen(true)}>
             <Menu className="h-6 w-6" />
           </button>
         </div>
@@ -36,10 +41,16 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between px-4 py-3 border-b">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Logo" className="h-8 w-8 object-cover rounded-full" />
-            <span className="text-lg font-semibold text-gray-800">BookTopper</span>
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-8 w-8 object-cover rounded-full"
+            />
+            <span className="text-lg font-semibold text-gray-800">
+              Librarian
+            </span>
           </div>
-          <button onClick={() => setIsOpen(false)}>
+          <button type="button" onClick={() => setIsOpen(false)}>
             <X className="h-6 w-6" />
           </button>
         </div>
@@ -62,8 +73,7 @@ export default function Navbar() {
 
 // NavLinks Component
 function NavLinks({ onClick }: { onClick?: () => void }) {
-  const linkClass =
-    "text-gray-700 hover:text-blue-600 transition font-medium";
+  const linkClass = "text-gray-700 hover:text-blue-600 transition font-medium";
 
   return (
     <>

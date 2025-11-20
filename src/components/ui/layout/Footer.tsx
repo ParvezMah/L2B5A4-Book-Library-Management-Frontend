@@ -3,8 +3,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 py-10">
         <div className=" flex items-center justify-center mb-4 mx-auto space-x-3">
-           <img className="w-20 h-20 rounded-full" src={logo}></img>
-            <span className="text-2xl font-bold text-gray-900">BookTopper</span>
+           <img className="w-20 h-20 rounded-full" src={logo} alt="logo"></img>
+            <span className="text-2xl font-bold text-gray-900">Librarian</span>
           </div>
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col md:flex-row md:justify-between md:space-x-10">

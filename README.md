@@ -8,8 +8,8 @@ A clean and minimal **Library Management System** built with **React**, **Redux 
 
 ## 🌐 Live Site
 
-🔗 [Frontend Live Link](https://redux-assignment-4-munna.vercel.app/books)  
-🔗 [Backend Live Link (if any)](https://redux-assignemnt-4-backend.vercel.app/)
+🔗 [Frontend Live Link]()  
+🔗 [Backend Live Link (if any)]()
 
 ---
 
