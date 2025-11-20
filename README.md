@@ -1,15 +1,14 @@
-# 📚 Minimal Library Management System – B5A4
+# 📚 L2B5A4-Book-Library-Management-Frontend
 
 A clean and minimal **Library Management System** built with **React**, **Redux Toolkit Query**, and **TypeScript**. This project allows users to view, add, edit, delete, and borrow books, with a simple UI and solid API integration.
 
->  Developed for Apollo Level-2 Web Development Assignment – B5A4
 
 ---
 
 ## 🌐 Live Site
 
-🔗 [Frontend Live Link]()  
-🔗 [Backend Live Link (if any)]()
+🔗 [Frontend Live Link](https://l2-b5-a4-library-management-fronten.vercel.app/)  
+🔗 [Backend Live Link (if any)](https://l2-b5-a3-library-management-backend.vercel.app/)
 
 ---
 
