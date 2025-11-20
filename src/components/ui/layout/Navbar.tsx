@@ -8,20 +8,18 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-sm px-6 py-3 my-8">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between w-full">
         {/* Logo Section */}
-        <Link to="/">
-          <div className="flex items-center gap-2">
+          <Link to="/">
+        <div className="flex items-center gap-2">
             <img
               src={logo}
               alt="Logo"
               className="h-10 w-10 object-cover rounded-full"
             />
-            <span className="text-xl font-semibold text-gray-800">
-              Librarian
-            </span>
-          </div>
-        </Link>
+          <span className="text-xl font-semibold text-gray-800">Librarian</span>
+        </div>
+          </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 items-center">

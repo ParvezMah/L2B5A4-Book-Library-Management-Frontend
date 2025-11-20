@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* Bottom copyright */}
         <div className="mt-10 border-t border-gray-300 pt-6 text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Bookio. All rights reserved.
+          &copy; {new Date().getFullYear()} Librarian. All rights reserved.
         </div>
       </div>
     </footer>
