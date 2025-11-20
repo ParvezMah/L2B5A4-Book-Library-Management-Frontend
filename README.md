@@ -118,14 +118,3 @@ All pages are accessible without login or authentication.
 
 ---
 
-##  Installation
-
-1. Clone the repo:
-   ```bash
-    FrontEnd
- https://github.com/md-munna-khan/Assignment-4-redux
-
-
-  Backend
-https://github.com/md-munna-khan/B5-A4-Backend
-

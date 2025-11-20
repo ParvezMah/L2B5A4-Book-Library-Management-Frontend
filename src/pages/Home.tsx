@@ -15,11 +15,12 @@ export default function Home() {
      if(isLoading){
       return <Spinner/>
      }
-     const firstEightData = data?.data?.slice(0,8)
+     const firstEightData = data?.data?.slice(0,8);
+     console.log("firstEightData : ", firstEightData)
   return (
     <>
    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 '>
-   {!isLoading && firstEightData.map((book:IBooks)=>
+   {!isLoading && firstEightData?.map((book:IBooks)=>
      (<BooksTable book={book}  key={book._id}/>  ))}
     
     </div>

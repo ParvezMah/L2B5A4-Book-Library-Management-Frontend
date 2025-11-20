@@ -8,6 +8,9 @@ import AllBooks from '@/module/AllBooks';
 
 export default function Book() {
   const { data,  isLoading } = useGetBookQuery(undefined);
+  console.log("Data : ", data);
+  console.log("data.books : ", data.books);
+  console.log("isLoading : ", isLoading);
 
   if (isLoading) return <Spinner />;
 
@@ -28,7 +31,8 @@ export default function Book() {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {data?.data?.map((book: IBooks) => (
+            {/* {data?.data?.map((book: IBooks) => ( */}
+            {data?.books?.map((book: IBooks) => (
               <AllBooks book={book} key={book._id} />
             ))}
           </tbody>
