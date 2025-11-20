@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logo from "./logo.jpg";
 export default function Footer() {
   return (
@@ -18,19 +19,19 @@ export default function Footer() {
               <h3 className="text-gray-900 text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>
-                  <a href="/" className="hover:text-blue-500 transition">Home</a>
+                  <Link to="/" className="hover:text-blue-500 transition">Home</Link>
                 </li>
                 <li>
-                  <a href="/books" className="hover:text-blue-500 transition">Books</a>
+                  <Link to="/books" className="hover:text-blue-500 transition">Books</Link>
                 </li>
                 <li>
-                  <a href="/borrow-summary" className="hover:text-blue-500 transition">Borrow Summary</a>
+                  <Link to="/borrow-summary" className="hover:text-blue-500 transition">Borrow Summary</Link>
                 </li>
                 <li>
-                  <a href="/services" className="hover:text-blue-500 transition">Services</a>
+                  <Link to="/services" className="hover:text-blue-500 transition">Services</Link>
                 </li>
                 <li>
-                  <a href="/membership" className="hover:text-blue-500 transition">Membership</a>
+                  <Link to="/membership" className="hover:text-blue-500 transition">Membership</Link>
                 </li>
               </ul>
             </div>
@@ -40,10 +41,10 @@ export default function Footer() {
               <h3 className="text-gray-900 text-lg font-semibold mb-4">E-books</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>
-                  <a href="/ebooks" className="hover:text-blue-500 transition">E-books</a>
+                  <Link to="/ebooks" className="hover:text-blue-500 transition">E-books</Link>
                 </li>
                 <li>
-                  <a href="/audiobooks" className="hover:text-blue-500 transition">Audiobooks</a>
+                  <Link to="/audiobooks" className="hover:text-blue-500 transition">Audiobooks</Link>
                 </li>
               </ul>
             </div>
@@ -53,13 +54,13 @@ export default function Footer() {
               <h3 className="text-gray-900 text-lg font-semibold mb-4">About Us</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>
-                  <a href="/mission" className="hover:text-blue-500 transition">Our Mission</a>
+                  <Link to="/mission" className="hover:text-blue-500 transition">Our Mission</Link>
                 </li>
                 <li>
-                  <a href="/team" className="hover:text-blue-500 transition">Team</a>
+                  <Link to="/team" className="hover:text-blue-500 transition">Team</Link>
                 </li>
                 <li>
-                  <a href="/careers" className="hover:text-blue-500 transition">Careers</a>
+                  <Link to="/careers" className="hover:text-blue-500 transition">Careers</Link>
                 </li>
               </ul>
             </div>
@@ -69,13 +70,13 @@ export default function Footer() {
               <h3 className="text-gray-900 text-lg font-semibold mb-4">Support</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>
-                  <a href="/help-center" className="hover:text-blue-500 transition">Help Center</a>
+                  <Link to="/help-center" className="hover:text-blue-500 transition">Help Center</Link>
                 </li>
                 <li>
-                  <a href="/faqs" className="hover:text-blue-500 transition">FAQs</a>
+                  <Link to="/faqs" className="hover:text-blue-500 transition">FAQs</Link>
                 </li>
                 <li>
-                  <a href="/feedback" className="hover:text-blue-500 transition">Feedback</a>
+                  <Link to="/feedback" className="hover:text-blue-500 transition">Feedback</Link>
                 </li>
               </ul>
             </div>
