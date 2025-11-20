@@ -5,9 +5,8 @@ export const bookApi = createApi({
   reducerPath: "bookApi",
   baseQuery: fetchBaseQuery({
     // baseUrl: import.meta.env.VITE_API_URL
-    baseUrl: "http://localhost:5000/api"
+    // baseUrl: "http://localhost:5000/api"
     // baseUrl: "https://redux-assignemnt-4-backend.vercel.app/api",
-    // baseUrl: "https://library-management-api-ruddy.vercel.app/api",
   }),
   tagTypes: ["books"],
   endpoints: (builder) => ({
