@@ -31,8 +31,7 @@ export default function Book() {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {/* {data?.data?.map((book: IBooks) => ( */}
-            {data?.books?.map((book: IBooks) => (
+            {data?.data?.map((book: IBooks) => (
               <AllBooks book={book} key={book._id} />
             ))}
           </tbody>

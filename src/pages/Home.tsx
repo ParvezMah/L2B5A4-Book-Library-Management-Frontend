@@ -10,13 +10,16 @@ import { Link } from 'react-router'
 
 
 export default function Home() {
-   const { data, isError, isLoading } = useGetBookQuery(undefined)
-     console.log({ data, isLoading, isError })
-     if(isLoading){
-      return <Spinner/>
-     }
-     const firstEightData = data?.data?.slice(0,8);
-     console.log("firstEightData : ", firstEightData)
+   const { data, isLoading } = useGetBookQuery(undefined)
+    console.log({ data, isLoading })
+
+    console.log("data : ", data)
+    console.log("data?.data : ", data?.data)
+    if(isLoading){
+    return <Spinner/>
+    }
+    const firstEightData = data?.data?.slice(0,8);
+    console.log("firstEightData : ", firstEightData)
   return (
     <>
    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 '>
